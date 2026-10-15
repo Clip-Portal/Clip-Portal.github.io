@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &middot; autoclips</title>
+<meta name="description" content="Privacy policy for autoclips, a private single-user video clipping tool.">
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 3rem 1.25rem 5rem;
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #16181d; background: #fbfbfd;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; margin: 0 0 .3rem; letter-spacing: -.02em; }
+  .updated { color: #62676f; margin: 0 0 2.4rem; font-size: .95rem; }
+  h2 { font-size: 1.12rem; margin: 2.2rem 0 .6rem; }
+  p, li { margin: 0 0 .85rem; }
+  ul { padding-left: 1.15rem; }
+  code { background: #eceef2; padding: .12em .4em; border-radius: 5px; font-size: .88em;
+         font-family: ui-monospace, "Cascadia Code", Consolas, monospace; }
+  .lead { font-size: 1.06rem; }
+  a { color: #3546d6; }
+  footer { margin-top: 3.2rem; padding-top: 1.2rem; border-top: 1px solid #e3e5ea; color: #62676f; font-size: .93rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e7e9ee; background: #101216; }
+    .updated, footer { color: #969ca7; }
+    code { background: #1c2027; }
+    footer { border-top-color: #272c35; }
+    a { color: #93a2ff; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 14 October 2026</p>
+
+  <p class="lead">
+    <strong>autoclips</strong> is a private, single-user desktop application. It has
+    exactly one user: the person who installed it, who is also its author. It is not
+    a public service, it has no sign-up or accounts, and it does not collect
+    information about anyone else, because there is no one else.
+  </p>
+
+  <h2>What information it accesses</h2>
+  <p>
+    When you connect a YouTube channel, the app requests two permissions through the
+    YouTube Data API v3:
+  </p>
+  <ul>
+    <li><strong>Upload videos</strong> &mdash; to publish clips to your own channel.</li>
+    <li><strong>Manage your videos</strong> &mdash; to remove an upload again if it was a mistake.</li>
+  </ul>
+  <p>
+    Through those permissions the app can see your channel's name, ID and public
+    statistics, and the videos it uploaded itself. It does not read your private
+    messages, your subscribers, your analytics, or anything else.
+  </p>
+
+  <h2>Where that information goes</h2>
+  <p>
+    Nowhere. The app runs entirely on your own computer. It does not have a server,
+    a backend, a database in the cloud, or any analytics.
+  </p>
+  <ul>
+    <li>
+      Your OAuth credentials are stored <strong>locally on your own machine</strong>,
+      and are sent only to Google, to authenticate your own requests.
+    </li>
+    <li>
+      Nothing is transmitted to the author of this application, or to any other
+      third party.
+    </li>
+    <li>
+      No data is sold, shared, rented, or used for advertising. There is no
+      advertising.
+    </li>
+  </ul>
+  <p>
+    When selecting moments to clip, the app sends video <em>transcript text</em> to a
+    language model provider to choose highlights. That text is the spoken content of
+    the video being clipped, and it is the only thing sent. No Google user data is
+    included in those requests.
+  </p>
+
+  <h2>Google API Limited Use</h2>
+  <p>
+    autoclips' use of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy"
+       rel="noopener">Google API Services User Data Policy</a>, including the Limited
+    Use requirements.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>You are in control of everything, because everything is on your machine.</p>
+  <ul>
+    <li>
+      <strong>Revoke access at any time</strong> at
+      <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.
+      This immediately invalidates the credentials the app holds.
+    </li>
+    <li>
+      <strong>Delete stored credentials</strong> by removing the app's local database
+      file (<code>autoclips.db</code>) from its installation folder. They are not
+      copied anywhere else.
+    </li>
+    <li>
+      <strong>Delete uploaded videos</strong> from YouTube Studio, or with the app's
+      own removal command.
+    </li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>
+    This application is not directed at children and is not distributed to the
+    public. It has no users other than its author.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes, the revised version will be published at this address
+    with a new date at the top.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy can be sent to
+    <a href="mailto:jayraywebb07@gmail.com">jayraywebb07@gmail.com</a>.
+  </p>
+
+  <footer>
+    <a href="index.html">autoclips</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>autoclips</title>
+<meta name="description" content="autoclips is a personal tool for turning long videos into short vertical clips.">
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 3rem 1.25rem 5rem;
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #16181d; background: #fbfbfd;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 2.1rem; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  .tag { color: #62676f; margin: 0 0 2.4rem; font-size: 1.05rem; }
+  h2 { font-size: 1.15rem; margin: 2.4rem 0 .6rem; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.15rem; }
+  li { margin: .35rem 0; }
+  code {
+    background: #eceef2; padding: .12em .4em; border-radius: 5px;
+    font-size: .88em; font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+  }
+  .note {
+    margin: 2.2rem 0 0; padding: 1rem 1.15rem;
+    background: #fff; border: 1px solid #e3e5ea; border-left: 3px solid #4a5cf5;
+    border-radius: 8px; font-size: .96rem;
+  }
+  footer { margin-top: 3.4rem; padding-top: 1.2rem; border-top: 1px solid #e3e5ea; color: #62676f; font-size: .93rem; }
+  a { color: #3546d6; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e7e9ee; background: #101216; }
+    .tag, footer { color: #969ca7; }
+    code { background: #1c2027; }
+    .note { background: #171a20; border-color: #272c35; border-left-color: #7285ff; }
+    footer { border-top-color: #272c35; }
+    a { color: #93a2ff; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>autoclips</h1>
+  <p class="tag">A personal tool for turning long videos into short vertical clips.</p>
+
+  <p>
+    <strong>autoclips</strong> is a private, single-user desktop application. It is
+    not a public service, it has no sign-up, and it is not offered to other people.
+    It exists to help its owner produce short-form video from long-form sources.
+  </p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Transcribes a long video and asks a language model which moments stand alone as clips.</li>
+    <li>Downloads only the chosen segments, rather than the whole source.</li>
+    <li>Generates word-level captions and reframes the video to a vertical 9:16 format.</li>
+    <li>Renders finished clips for review, and uploads the approved ones to the owner's own YouTube channel.</li>
+  </ul>
+
+  <h2>Its YouTube integration</h2>
+  <p>
+    The app connects to the owner's own YouTube channel through the
+    <strong>YouTube Data API v3</strong> for one purpose: uploading video the owner
+    has made. It requests two permissions &mdash; to upload videos, and to remove
+    them again. It does not read, modify, or delete anything else on the channel.
+  </p>
+  <p>
+    Every upload passes a human review step first, and uploads are created as
+    <em>private</em> by default. Nothing becomes publicly visible without the owner
+    explicitly choosing so.
+  </p>
+
+  <h2>Data handling</h2>
+  <p>
+    The app stores its OAuth credentials locally on the owner's own computer. Those
+    credentials are never transmitted anywhere except to Google, to authenticate the
+    owner's own requests. No data is collected from, or about, anybody else.
+    See the <a href="privacy.html">Privacy Policy</a> for the details.
+  </p>
+
+  <p class="note">
+    This project is unverified with Google and is intended solely for its author's
+    own use. If you have reached it looking for a service to sign up for, there
+    isn't one.
+  </p>
+
+  <footer>
+    autoclips &middot; <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
